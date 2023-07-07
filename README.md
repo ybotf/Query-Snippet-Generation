@@ -1,4 +1,4 @@
-# query-snippet-generation
+# Query Snippet Generation
 Program to generate term-biased snippets for paragraphs of text
 
 **'test3-out.txt' is an example of the output with the query term 'alice children poison drink bottle' for text 'data3.txt'**
