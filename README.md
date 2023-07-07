@@ -13,9 +13,7 @@ Note how the fourth snippet is actually composed of two shorter segments, indica
 This program that reads paragraphs of text from stdin, builds a snippet for each paragraph according to certain rules, and then writes those snippets to stdout. This can be seperated into 3 stages:
 
 ## Stage 1 - Reading Text
-A function get_word() returns one three status values: WORD_FND if it identifes a word; PARA_END if instead of a word, a paragraph boundary was identified; and EOF if the end of the input file was reached. Paragraphs are identified in the input text by the combination "\n\n", that is, two consecutive newline characters; or by reaching the end of file after one or more alphabetic words have been found since the last paragraph boundary.
-
-The required output from this stage is a message for each paragraph that indicates the paragraph number, and its length in words.
+A function get_word() returns one three status values: WORD_FND if it identifes a word; PARA_END if instead of a word, a paragraph boundary was identified; and EOF if the end of the input file was reached. Paragraphs are identified in the input text by the combination "\n\n", that is, two consecutive newline characters; or by reaching the end of file after one or more alphabetic words have been found since the last paragraph boundary. The output from this stage is a message for each paragraph that indicates the paragraph number, and its length in words.
 
 ## Stage 2 - Matching Words and Printing Text
 A function that writes each paragraph’s words across the page, making sure that no line contains more than 72 characters. Each “word” that is output should be separated from the previous word in the same line by a single blank character. Any words in each paragraph that match any query terms in a case-insensitive manner  are “bolded” in the output text by putting “*" before and after them. For example, if “web” is supplied as one of the query terms, then the word “Web;” in the input text must place “*Web*;” into the output text. 
