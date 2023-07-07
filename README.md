@@ -33,4 +33,4 @@ snippet, even if it takes the last output line past 72 characters.
 
 The highest-scoring contiguous snippet is identified for each input paragraph. In the case of scores that are equal, select the snippet that starts closest to the beginning of the paragraph. And if there are still ties, print out the shortest legal maximum-score snippet starting at that point
 
-(altered descrpition written by Alistair Moffat)
+(altered descrpition written by Alistair Moffat, 2022)
